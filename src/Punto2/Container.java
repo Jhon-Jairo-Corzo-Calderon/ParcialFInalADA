@@ -17,6 +17,6 @@ public class Container {
     }
     @Override
     public String toString() {
-        return "Container#" + name + ", peso: " + peso;
+        return "| Container#" + name + ", peso: " + peso +" |";
     }
 }
