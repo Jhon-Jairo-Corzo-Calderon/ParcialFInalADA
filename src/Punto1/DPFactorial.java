@@ -12,4 +12,18 @@ public class DPFactorial {
         calculated.add(2);
 
     }
+    public int factorial(int num){
+
+        if(num==0)
+            return calculated.get(num);
+        if(num<calculated.size()-1)
+            return calculated.get(num);
+
+        int temp;
+        for(int i = calculated.size()-1; i<num; i++){
+            calculated.add(calculated.get(i)*(i+1));
+        }
+        return calculated.get(num);
+
+    }
 }
