@@ -1,13 +1,9 @@
 package Punto2;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Carguero co;
 
+        Carguero co;
         co = new Carguero(700);
 
         Container[] containers = new Container[]{new Container("C1",100),new Container("C2",155), new Container("C3",50),new Container("C4",112),
@@ -15,8 +11,7 @@ public class Main {
                 new Container("C10",55)};
 
 
-        MergeSort sort = new MergeSort();
-        sort.sort(containers, 0, containers.length-1);
+        MergeSort.sort(containers, 0, containers.length-1);
 
         containers = reverseArr(containers);
 
@@ -24,7 +19,7 @@ public class Main {
         System.out.println(co.stringCarga());
     }
 
-    public static void maxCarga(Carguero bq, Container[] cr){
+    public static void maxCarga(Carguero co, Container[] cr){
 
     }
 
