@@ -1,2 +1,4 @@
-package Punto1;public class Main {
+package Punto1;
+
+public class Main {
 }
