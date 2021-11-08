@@ -18,9 +18,25 @@ public class Main {
         MergeSort sort = new MergeSort();
         sort.sort(containers, 0, containers.length-1);
 
-        System.out.println(Arrays.toString(containers));
+        containers = reverseArr(containers);
 
-       
+        maxCarga(co,containers);
+        System.out.println(co.stringCarga());
+    }
 
+    public static void maxCarga(Carguero bq, Container[] cr){
+
+    }
+
+    public static Container[] reverseArr(Container[] cr){
+        int len = cr.length;
+        Container[] b = new Container[len];
+        int j = len;
+        for (int i = 0; i < len; i++) {
+            b[j - 1] = cr[i];
+            j = j - 1;
+        }
+
+        return b;
     }
 }
