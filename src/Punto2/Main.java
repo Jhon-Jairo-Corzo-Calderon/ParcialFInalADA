@@ -16,11 +16,25 @@ public class Main {
         containers = reverseArr(containers);
 
         maxCarga(co,containers);
+        System.out.println("---Carga maxima para el carguero---");
         System.out.println(co.stringCarga());
     }
 
     public static void maxCarga(Carguero co, Container[] cr){
+        int cap = co.getCapCarga();
+        int i = 0;
+        Container temp;
+        boolean loop = true;
+        int cant;
 
+        while(i<= cr.length-1){
+            temp = cr[i];
+            cant = cap/temp.getPeso();
+            cap -= cant*temp.getPeso();
+            i++;
+
+            co.addContainer(new Container(temp.getName(),temp.getPeso()),cant);
+        }
     }
 
     public static Container[] reverseArr(Container[] cr){
