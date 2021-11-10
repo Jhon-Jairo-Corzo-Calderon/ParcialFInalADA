@@ -30,7 +30,7 @@ public class Main {
         //System.out.println(conversion);
         mn.KruskalMST(transformedG,conversion);
 
-        System.out.println("\n\n------------------Ejercicio #2------------------");
+        System.out.println("------------------Ejercicio #2------------------");
         conversion.clear();
 
         V = 8; E = 11;
