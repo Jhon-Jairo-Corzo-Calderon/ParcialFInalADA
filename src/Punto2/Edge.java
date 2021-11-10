@@ -11,6 +11,15 @@ public class Edge {
         this.inicio = inicio;
         this.fin = fin;
     }
+
+    @Override
+    public String toString() {
+        return "Edge{" +
+                "inicio=" + inicio +
+                ", fin=" + fin +
+                ", peso=" + peso +
+                '}';
+    }
     // Comparator function used for
     // sorting edgesbased on their weight
 
